@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
     --cor-principal: #FFFFFF;
     --cor-secundaria: #C0C0C0;
     --botao: #167BF7;
-    --cor-de-fundo: #00030C
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
 }
 
 * {
@@ -13,6 +16,9 @@
 body {
     background-color: var(--cor-de-fundo);
     color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .principal {
@@ -23,6 +29,21 @@ body {
 
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
 }
 
 .container__botao {
@@ -32,4 +53,15 @@ body {
     color: var(--cor-principal);
     text-decoration: none;
     display: block; /*ocupa todo o espaço do bloco que está*/
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-principal);
+}
+
+.container__aviso {
+    font-size: 0.75em; /* 12px/16px = 0.75em */
+    color: var(--cor-secundaria);
 }
