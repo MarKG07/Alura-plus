@@ -84,7 +84,6 @@ body {
 .descricao__titulo {
     font-weight: 700;
     font-size: 3em;
-    color: var(--cor-principal);
     margin-bottom: 0.1em;
 }
 
@@ -97,4 +96,23 @@ body {
     /*inline permite colocar elementos ao lado e ocupa apenas seu espaço / block permite mudar width e height e 
     ocupa toda linha onde estiver*/
     margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 2em;
 }
