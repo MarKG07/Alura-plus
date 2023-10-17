@@ -21,16 +21,22 @@ body {
     font-weight: 400;
 }
 
-.principal {
-    background-image: url("img/Background.png");
-    background-repeat: no-repeat;
-    background-size: contain; /*ocupa todo o espaço que estiver*/
-}
-
 .container {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain; /*ocupa todo o espaço que estiver*/
+    align-items: center;
+    text-align: center;
+}
+
+.container__descricao {
+    padding: 2em;
 }
 
 .container__caixa {
@@ -52,7 +58,7 @@ body {
     padding: 1em; /*relativo a 16px*/
     color: var(--cor-principal);
     text-decoration: none;
-    display: block; /*ocupa todo o espaço do bloco que está*/
+    display: block; /*ocupa todo o espaço da linha que está*/
     margin-bottom: 1em;
 }
 
@@ -64,4 +70,31 @@ body {
 .container__aviso {
     font-size: 0.75em; /* 12px/16px = 0.75em */
     color: var(--cor-secundaria);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3em;
+    color: var(--cor-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cor-secundaria);
+}
+
+.secundario__botao {
+    display: inline-block;/*permite que o elemento ocupe apenas seu espaço e passe outros elementos para baixo*/
+    /*inline permite colocar elementos ao lado e ocupa apenas seu espaço / block permite mudar width e height e 
+    ocupa toda linha onde estiver*/
+    margin-top: 1em;
 }
