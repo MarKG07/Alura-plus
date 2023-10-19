@@ -6,6 +6,7 @@
     --botao: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter';
+    --botao-efeito: #014da9;
 }
 
 * {
@@ -62,6 +63,11 @@ body {
     margin-bottom: 1em;
 }
 
+.container__botao:hover {
+    background-color: var(--botao-efeito);
+    transition-duration: 0.5s ;
+}
+
 .botao_secundario {
     background-color: transparent;
     border: 2px solid var(--cor-principal);
@@ -115,4 +121,33 @@ body {
 
 .lista__item {
     font-size: 2em;
+}
+
+.rodape {
+    text-align: center;
+    margin: 4em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    margin-left: 1em;
+}
+
+.lista__link a:hover {
+    color: var(--botao);
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cor-secundaria);
+    font-size: 0.875em; /*14px*/
 }
